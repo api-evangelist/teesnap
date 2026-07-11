@@ -1,0 +1,84 @@
+aid: teesnap
+name: Teesnap
+review:
+  question: Does Teesnap expose a documented public WebSocket API?
+  answer: false
+  date: '2026-07-11'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was authored. Teesnap does not publish any public API -
+    REST, WebSocket, or otherwise - so there is no documented server-push
+    transport (WebSocket or SSE) on Teesnap's own surface to model. Teesnap is a
+    golf course management and point-of-sale SaaS; its real-time behavior (live
+    tee sheet, POS) happens inside its own hosted web and mobile applications and
+    through partner integrations, none of which are exposed as a public,
+    documented streaming API.
+findings:
+  summary: |
+    Teesnap does not publish a documented public WebSocket API. In fact, Teesnap
+    does not publish a public, self-service developer API of any kind. Teesnap is
+    an all-in-one golf course management platform and point-of-sale system
+    (founded 2013, Las Vegas, NV) covering a tee sheet and booking engine, golf
+    and food-and-beverage POS, membership and customer management, an online
+    store, websites, payments, and marketing/reporting. Its extensibility is
+    delivered through partner-gated integrations rather than an open API: GolfNow
+    (official online tee-time distribution partner via NBC Sports Next), Priswing
+    (dynamic pricing), Golf Genius (tournament management), QuickBooks Online
+    (accounting), Gallus (mobile apps), Heartland (payments), and eRange /
+    Select Pi (range hardware). No developer portal, API reference, OpenAPI, or
+    authentication documentation could be found on teesnap.com or support.teesnap.com.
+    No WebSocket (ws:// or wss://) endpoint is documented anywhere.
+  publicApi: |
+    None found. Teesnap's public web presence (teesnap.com, the platform and POS
+    pages, the partners/integrations page, and support.teesnap.com) markets the
+    product and its partner integrations but does not describe an API, a
+    developer program, endpoints, authentication, or SDKs. Integrations appear to
+    be arranged through business-development relationships, not self-serve
+    developer sign-up.
+  accessModel: partner-gated
+  transports:
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket endpoint is documented anywhere on Teesnap's public sites.
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public REST API documentation, developer portal, or API reference was found. Any REST surface behind the apps and partner integrations is undocumented publicly.
+  endpointsConfirmed: []
+  endpointsModeled: true
+  endpointsModeledNote: |
+    The APIs listed in apis.yml (Tee Sheet, Point of Sale, Members and Customers,
+    Products and Inventory) are honestly modeled from Teesnap's publicly described
+    product capabilities. They carry endpointsModeled: true and deliberately do
+    NOT fabricate concrete paths, base URLs, or request/response schemas, because
+    no public API documentation exists to source them from.
+sources:
+  - url: https://www.teesnap.com/
+    type: Website
+    note: Marketing homepage; all-in-one golf course management platform. No API mentioned.
+  - url: https://www.teesnap.com/our-platform/
+    type: Website
+    note: Platform overview - tee sheet, POS, F&B, booking, online store, marketing. No API.
+  - url: https://www.teesnap.com/point-of-sale/
+    type: Website
+    note: POS product page. No API or developer resources.
+  - url: https://www.teesnap.com/partners-integrations/
+    type: Documentation
+    note: Lists partner integrations (Gallus, Priswing, QuickBooks, Golf Genius, GolfNow, eRange, Select Pi). No API, developer program, or portal mentioned.
+  - url: https://support.teesnap.com
+    type: Support
+    note: Support/knowledge base for operators. No developer/API documentation found.
+  - url: https://thegolfwire.com/nbc-sports-next-teesnap/
+    type: News
+    note: GolfNow (NBC Sports Next) becomes Teesnap's official online tee-time distribution partner - a partner integration, not a public API.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    No WebSocket surface exists, and Teesnap publishes no public API of any kind.
+    No AsyncAPI document was created because there is no documented server-push
+    transport on Teesnap's own API to model. The apis.yml entry documents the
+    provider honestly as partner-gated, with modeled (endpointsModeled: true)
+    logical API areas and no fabricated endpoints.

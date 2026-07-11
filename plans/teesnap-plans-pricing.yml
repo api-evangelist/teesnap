@@ -1,0 +1,38 @@
+aid: teesnap
+name: Teesnap Plans and Pricing
+description: >-
+  Teesnap does not publish transparent, self-service pricing or a public API
+  plan. Pricing for the golf course management platform is quote-based and
+  handled through its sales team; prospective operators request a demo and a
+  custom quote. There is no published API pricing, API plan, or developer tier
+  because Teesnap does not currently offer a public, self-service developer API -
+  integrations are arranged through partner and business-development
+  relationships.
+pricingModel: contact-sales
+publicApiPlan: false
+plans:
+- name: Contact Sales
+  description: >-
+    All Teesnap platform pricing is quote-based and tailored to the golf
+    operation (number of users, modules, payment processing, and add-ons).
+    Contact Teesnap for a demo and custom quote.
+  price: contact-sales
+  currency: USD
+  url: https://www.teesnap.com/
+thirdPartyReported:
+  note: >-
+    Third-party software directories (not Teesnap's own site) have reported a
+    starting figure around USD 60 per user per month. This is unverified against
+    any official Teesnap price list and is provided only for context; the
+    authoritative price is a custom sales quote.
+  approxStartingPrice: 60
+  currency: USD
+  unit: per user per month
+  sources:
+  - https://www.capterra.com/p/151993/Teesnap/
+  - https://www.getapp.com/recreation-wellness-software/a/teesnap/
+sources:
+- url: https://www.teesnap.com/
+  type: Website
+- url: https://www.teesnap.com/our-platform/
+  type: Website

@@ -1,0 +1,126 @@
+aid: teesnap
+url: https://raw.githubusercontent.com/api-evangelist/teesnap/refs/heads/main/apis.yml
+name: Teesnap
+kind: company
+description: >-
+  Teesnap is an all-in-one golf course management platform and point-of-sale
+  system for golf operators, founded in 2013 and based in Las Vegas, Nevada. Its
+  cloud software suite covers a tee sheet and tee-time booking engine, golf and
+  food-and-beverage point of sale, customer and membership management, an online
+  store, websites, payments, and a marketing and reporting system. Teesnap
+  connects to the wider golf ecosystem through partner integrations - GolfNow
+  (its official online tee-time distribution partner via NBC Sports Next),
+  Priswing dynamic pricing, Golf Genius tournament management, QuickBooks Online
+  accounting, Gallus mobile apps, Heartland payment processing, and range
+  hardware from eRange and Select Pi. As of this catalog's review date Teesnap
+  does not publish a public, self-service developer API or developer portal;
+  integrations are delivered through partner-gated, business-development
+  relationships. The APIs listed here are honestly modeled from Teesnap's public
+  product surface and are not sourced from published API documentation.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Golf
+- Point of Sale
+- POS
+- Tee Times
+- Golf Course Management
+- Booking
+- Partner Gated
+created: '2026-07-11'
+modified: '2026-07-11'
+specificationVersion: '0.19'
+apis:
+- aid: teesnap:teesnap-tee-sheet-api
+  name: Teesnap Tee Sheet API
+  tags:
+  - Tee Times
+  - Tee Sheet
+  - Booking
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.teesnap.com/our-platform/
+  endpointsModeled: true
+  properties:
+  - url: https://www.teesnap.com/our-platform/
+    type: Website
+  - url: https://www.teesnap.com/partners-integrations/
+    type: Documentation
+  description: >-
+    Modeled tee sheet and tee-time booking surface for creating, searching, and
+    managing tee-time reservations, availability, and rate types. Teesnap does
+    not publish public API documentation for this capability; it is exposed to
+    partners (for example the GolfNow marketplace distribution) through gated
+    business-development integrations. Endpoints are honestly modeled from the
+    product's described behavior, not sourced from published API docs.
+- aid: teesnap:teesnap-point-of-sale-api
+  name: Teesnap Point of Sale API
+  tags:
+  - Point of Sale
+  - Orders
+  - Payments
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.teesnap.com/point-of-sale/
+  endpointsModeled: true
+  properties:
+  - url: https://www.teesnap.com/point-of-sale/
+    type: Website
+  - url: https://www.teesnap.com/partners-integrations/
+    type: Documentation
+  description: >-
+    Modeled point-of-sale surface covering pro-shop and food-and-beverage sales,
+    orders, tenders, and payment capture (Teesnap integrates Heartland payment
+    processing and syncs to QuickBooks Online). No public API documentation is
+    published for this capability; endpoints are honestly modeled from the
+    product's described behavior rather than sourced from developer docs.
+- aid: teesnap:teesnap-members-customers-api
+  name: Teesnap Members and Customers API
+  tags:
+  - Members
+  - Customers
+  - CRM
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.teesnap.com/our-platform/
+  endpointsModeled: true
+  properties:
+  - url: https://www.teesnap.com/our-platform/
+    type: Website
+  - url: https://www.teesnap.com/partners-integrations/
+    type: Documentation
+  description: >-
+    Modeled customer and membership surface for managing golfer profiles,
+    memberships, and account data that feeds Teesnap's marketing system. Player
+    profile sync to Golf Genius Tournament Management is one known partner
+    integration. Teesnap does not publish public API documentation for this
+    capability; endpoints are honestly modeled, not sourced from developer docs.
+- aid: teesnap:teesnap-products-inventory-api
+  name: Teesnap Products and Inventory API
+  tags:
+  - Products
+  - Inventory
+  - Online Store
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.teesnap.com/point-of-sale/
+  endpointsModeled: true
+  properties:
+  - url: https://www.teesnap.com/point-of-sale/
+    type: Website
+  - url: https://www.teesnap.com/partners-integrations/
+    type: Documentation
+  description: >-
+    Modeled product catalog and inventory surface backing the pro-shop POS and
+    Teesnap online store - products, pricing, and stock levels. No public API
+    documentation is published; endpoints are honestly modeled from the
+    described product behavior rather than sourced from developer docs.
+common:
+- type: LinkedIn
+  url: https://www.linkedin.com/company/teesnap
+- type: Website
+  url: https://www.teesnap.com
+- type: Documentation
+  url: https://support.teesnap.com
+- type: Plans
+  url: plans/teesnap-plans-pricing.yml
+- type: Integrations
+  url: https://www.teesnap.com/partners-integrations/
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
