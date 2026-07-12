@@ -111,6 +111,8 @@ apis:
     documentation is published; endpoints are honestly modeled from the
     described product behavior rather than sourced from developer docs.
 common:
+- type: DomainSecurity
+  url: security/teesnap-domain-security.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/teesnap
 - type: Website
