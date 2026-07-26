@@ -37,29 +37,9 @@ Teesnap connects to the golf ecosystem through partner-gated integrations rather
 
 These are logical API areas modeled from Teesnap's described product capabilities. They are **not** sourced from published API documentation and carry `endpointsModeled: true`.
 
-### Teesnap Tee Sheet API
 
-Modeled tee sheet and tee-time booking surface — reservations, availability, and rate types. Exposed to partners (e.g. GolfNow distribution) through gated integrations, not a public API.
 
-- **Human URL:** [https://www.teesnap.com/our-platform/](https://www.teesnap.com/our-platform/)
 
-### Teesnap Point of Sale API
-
-Modeled point-of-sale surface for pro-shop and food-and-beverage sales, orders, tenders, and payment capture (Heartland processing, QuickBooks Online sync).
-
-- **Human URL:** [https://www.teesnap.com/point-of-sale/](https://www.teesnap.com/point-of-sale/)
-
-### Teesnap Members and Customers API
-
-Modeled customer and membership surface — golfer profiles, memberships, and account data feeding the marketing system (Golf Genius player-profile sync is a known partner integration).
-
-- **Human URL:** [https://www.teesnap.com/our-platform/](https://www.teesnap.com/our-platform/)
-
-### Teesnap Products and Inventory API
-
-Modeled product catalog and inventory surface backing the pro-shop POS and the Teesnap online store — products, pricing, and stock levels.
-
-- **Human URL:** [https://www.teesnap.com/point-of-sale/](https://www.teesnap.com/point-of-sale/)
 
 ## Pricing
 
