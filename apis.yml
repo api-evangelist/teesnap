@@ -17,6 +17,17 @@ description: >-
   integrations are delivered through partner-gated, business-development
   relationships. The APIs listed here are honestly modeled from Teesnap's public
   product surface and are not sourced from published API documentation.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: enterprise
   onboarding: approval
