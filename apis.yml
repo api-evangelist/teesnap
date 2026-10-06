@@ -57,10 +57,12 @@ tags_raw:
   - Booking
   - Partner Gated
 created: '2026-07-11'
-modified: '2026-07-25'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis: []
 common:
+  - url: https://www.teesnap.com/feed/
+    type: BlogRSS
   - type: DomainSecurity
     url: security/teesnap-domain-security.yml
   - type: LinkedIn
