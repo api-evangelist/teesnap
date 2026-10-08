@@ -40,3 +40,16 @@ sources:
   type: Website
 - url: https://www.teesnap.com/our-platform/
   type: Website
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - negotiated
+  units: []
+  plans:
+  - name: Contact Sales
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
