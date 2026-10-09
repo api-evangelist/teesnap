@@ -34,6 +34,9 @@ accessModel:
   trial: false
   try_now: false
   public: false
+  gated: partner
+  gated_source:
+  - tag:Partner Gated
   label: Enterprise · Requires approval
   confidence: medium
   source:
@@ -47,7 +50,6 @@ tags:
   - Tee Times
   - Golf Course Management
   - Booking
-  - Partner Gated
 tags_raw:
   - Golf
   - Point of Sale
@@ -55,7 +57,6 @@ tags_raw:
   - Tee Times
   - Golf Course Management
   - Booking
-  - Partner Gated
 created: '2026-07-11'
 modified: '2026-10-06'
 specificationVersion: '0.23'
@@ -82,3 +83,5 @@ common:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-tags-removed:
+- Partner Gated
