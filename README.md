@@ -1,4 +1,4 @@
-# Teesnap (teesnap)
+# Teesnap
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,64 +64,86 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Teesnap is an all-in-one golf course management platform and point-of-sale system for golf operators, founded in 2013 and based in Las Vegas, Nevada. Its cloud software suite covers a tee sheet and tee-time booking engine, golf and food-and-beverage point of sale, customer and membership management, an online store, websites, payments, and a marketing and reporting system.
+Teesnap is an all-in-one golf course management platform and point-of-sale system for golf operators, founded in 2013 and based in Las Vegas, Nevada. Its cloud software suite covers a tee sheet and tee-time booking engine, golf and food-and-beverage point of sale, customer and membership management, an online store, websites, payments, and a marketing and reporting system. Teesnap connects to the wider golf ecosystem through partner integrations - GolfNow (its official online tee-time distribution partner via NBC Sports Next), Priswing dynamic pricing, Golf Genius tournament management, QuickBooks Online accounting, Gallus mobile apps, Heartland payment processing, and range hardware from eRange and Select Pi. As of this catalog's review date Teesnap does not publish a public, self-service developer API or developer portal; integrations are delivered through partner-gated, business-development relationships. The APIs listed here are honestly modeled from Teesnap's public product surface and are not sourced from published API documentation.
 
-> **Access model: partner-gated.** As of this catalog's review date (2026-07-11), Teesnap does **not** publish a public, self-service developer API or developer portal. There is no documented API reference, OpenAPI, authentication guide, or SDK on teesnap.com or support.teesnap.com. Extensibility is delivered through partner and business-development integrations rather than an open API. The APIs described below are **honestly modeled** from Teesnap's public product surface and are marked `endpointsModeled: true` — no endpoints, base URLs, or schemas are fabricated.
+**Areas:** Golf · Point-of-Sale · Tee Times · Golf Course Management · Booking
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/teesnap/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/teesnap/refs/heads/main/apis.yml)
+## Teesnap on APIs.io
 
-## Tags
+Everything profiled for Teesnap is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/teesnap/](https://apis.io/providers/teesnap/)** — or go straight to one of the APIs or properties below.
 
-- Golf
-- Point of Sale
-- POS
-- Tee Times
-- Golf Course Management
-- Booking
-- Partner Gated
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2026-07-11
-- **Modified:** 2026-07-11
+#### Security (1)
 
-## Partner Integrations
+Authentication, trust centre, and vulnerability disclosure.
 
-Teesnap connects to the golf ecosystem through partner-gated integrations rather than a public API:
+- [Teesnap Domain Security](https://apis.io/security/teesnap/teesnap-domain-security/)
 
-- **GolfNow** (NBC Sports Next) — official online tee-time distribution partner / marketplace
-- **Priswing** — AI-driven dynamic tee-time pricing
-- **Golf Genius** — tournament management, player-profile sync
-- **QuickBooks Online** — accounting sync
-- **Gallus** — branded mobile apps
-- **Heartland** — payment processing
-- **eRange** / **Select Pi** — driving-range hardware
+#### Plans and pricing (1)
 
-## APIs (Modeled)
+Published plans, tiers and prices.
 
-These are logical API areas modeled from Teesnap's described product capabilities. They are **not** sourced from published API documentation and carry `endpointsModeled: true`.
+- [Teesnap Plans Pricing](https://apis.io/plans/teesnap/teesnap-plans-pricing/)
 
+## Where to find this API
 
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-
-
-## Pricing
-
-Teesnap pricing is quote-based (contact sales) and tailored to the golf operation; there is no published API plan or developer tier. Third-party software directories have reported a starting figure around USD 60 per user per month, which is unverified against any official Teesnap price list. See [plans/teesnap-plans-pricing.yml](plans/teesnap-plans-pricing.yml).
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/teesnap)
 - [Website](https://www.teesnap.com)
-- [Documentation / Support](https://support.teesnap.com)
-- [Plans](plans/teesnap-plans-pricing.yml)
-- [Integrations](https://www.teesnap.com/partners-integrations/)
+- [Documentation](https://support.teesnap.com)
 
-## WebSocket Review
+## API Evangelist rating
 
-Does Teesnap expose a documented public WebSocket API? **No.** Teesnap publishes no public API of any kind — REST or WebSocket — so no AsyncAPI document was authored. See [review.yml](review.yml).
+**Kin Score 6.4** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-## Maintainers
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 5.3 |
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/teesnap/](https://apis.io/providers/teesnap/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Teesnap: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/teesnap/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
